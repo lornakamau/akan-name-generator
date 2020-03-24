@@ -1,9 +1,11 @@
 body {
   background-color: white;
 }
+
 .container{
   padding: 0;
 }
+
 .jumbotron {
   height: 616px;
   background-image: #626f92;
@@ -13,11 +15,13 @@ body {
   margin-top: 10px;
   margin-left: 10px;
 }
+
 .row{
   height: 616px;
   margin: 0;
   border-radius: 10px;
 }
+
 .col-md-5 {
     background-image: url("../child2.jpg");
     background-position: center;
@@ -27,21 +31,118 @@ body {
     padding-right: 10px;
     color: white;
   }
-  .col-md-7
-  { 
+.col-md-7 { 
     padding-left: 0;
-  } 
-h1{
+} 
+
+h1 {
     font-size: 40px; 
     font-family: 'Libre Baskerville', serif;
     text-align: center;
     padding-top: 5%;
 }
+
 p{
-  font-size: 18px;
+  font-size: 16px;
 }
+
 .content{
   padding-right: 12%;
   padding-left: 12%;
   text-align: center;
 }
+
+.form-group .label{
+  font-size: 16px;
+}
+
+.rdio {
+  position: relative;
+  font-size: 15px;
+}
+
+.rdio label {
+  padding-left: 10px;
+  cursor: grab;
+  margin-bottom: 7px !important;
+}
+
+.rdio label:before { /* edits the radio buttons */
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  content: ''; /* makes button contents empty */
+  display: inline-block; 
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px; /* makes button circular */
+  border: 1px solid rgb(126, 124, 124);
+  background: #fff;
+}
+
+.rdio-default input[type="radio"]:checked + label:before { /* changes button border color to black once it is selected */
+  border-color: black;
+}
+
+.rdio input[type="radio"]:checked + label::after  { /* edits button features once it is checked/selected */
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(64, 116, 212);
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+/*
+.rdio input[type="radio"] {
+  opacity: -10;
+}
+
+.rdio input[type="radio"]:disabled + label  {
+  color: #999;
+}
+
+.rdio input[type="radio"]:disabled + label:before  {
+  background-color: #eee;
+}
+
+
+.rdio-primary input[type="radio"]:checked + label:before {
+  border-color: #428BCA;
+}
+
+.rdio-primary input[type="radio"]:checked + label::after {
+  background-color: #428BCA;
+}
+
+.rdio-warning input[type="radio"]:checked + label:before {
+  border-color: #F0AD4E;
+}
+
+.rdio-warning input[type="radio"]:checked + label::after {
+  background-color: #F0AD4E;
+}
+
+.rdio-success input[type="radio"]:checked + label:before {
+  border-color: #1CAF9A;
+}
+
+.rdio-success input[type="radio"]:checked + label::after {
+  background-color: #1CAF9A;
+}
+
+.rdio-danger input[type="radio"]:checked + label:before {
+  border-color: #D9534F;
+}
+
+.rdio-danger input[type="radio"]:checked + label::after {
+  background-color: #D9534F;
+}
+*/

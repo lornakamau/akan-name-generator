@@ -5,7 +5,8 @@
         <title>Akan Name Generator</title>
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/akan.css"> 
+        <link rel="stylesheet" type="text/css" href="css/akan.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -15,13 +16,39 @@
                     <div class="col-md-7">
                         <h1>AKAN NAME GENERATOR</h1>
                         <div class="content">
-                            <img src="ghanaflag.png" alt="Ghana flag" class="rounded-circle" width= "100" height="100"><br><br>
+                            <img src="ghanaflag.png" alt="Ghana flag" class="rounded-circle" width= "80" height="80"><br><br>
                             <p>The Akan people of Ghana frequently name their children after the day of the week they were born. For each day of the week, there is a name available for each gender.</p>
                             <p>This web application helps you know your Akan name just from your birthday and gender! Awesome right? </p>
+                            <h5>Let's get started!</h5>
+                        </div>
+                        <div class= "content2">
+                                <form>
+                                    <div class="form-group">
+                                            <label class="label">Please enter your birthday here</label>
+                                            <div class="input-group">
+                                            <span class="input-group-addon" style="font-size:24px"><i class="fa fa-calendar"></i></span>
+                                            <input type="text" placeholder="mm/dd/yyyy" id="myBirthDate" class="form-control" autocomplete="off">
+                                          </div>
+                                    </div>   
+            
+                                    <div class="form-group">
+                                           <label class="label">What's your gender?</label>
+                                           <div class="rdio rdio-default">
+                                                <input type="radio" name="gender" id="male" value="Male">
+                                                <label for="male">&nbsp;&nbsp;Male</label>
+                                           </div>
+                                           <div class="rdio rdio-default">
+                                                <input type="radio" name="gender" id="female" value="Female">
+                                                <label for="female">&nbsp;&nbsp;Female</label>
+                                           </div>
+                                    </div>
+                                    <button type="submit" onclick="getAkanName(); return false;" class="btn btn-primary btn-xs"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>
+                                    <button type="reset" onclick="clearAkanMessage(); return false;" class="btn btn-default btn-xs"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;&nbsp;Cancel</button>		
+                                </form>	
                         </div>
                     </div>
-                   <div class="col-md-5">
-                   </div>
+                    <div class="col-md-5">
+                    </div>
                 </div>
             </div>
         </div>
