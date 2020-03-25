@@ -37,6 +37,9 @@ p{
   font-size: 16px;
 }
 
+h6{
+  padding-left: 32%;
+}
 .content{
   padding-right: 10%;
   padding-left: 10%;
@@ -71,7 +74,7 @@ form{
 
 .rdio label {
   padding-left: 10px;
-  cursor: grab;
+  cursor: pointer;
   margin-bottom: 7px !important;
 }
 

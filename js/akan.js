@@ -19,23 +19,21 @@ document.getElementById("submit").addEventListener("click",function(event){
   var maleNames = ["Kwasi", "Kwadwo", "Kwabena","Kwaku", "Yaw", "Kofi", "Kwame"];
   var femaleNames = ["Akosua","Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
   var birthday = new Date(mm + '/' + dd + '/' + yy);
-
   var dayOfTheWeek = birthday.getDay();
-
   
   //Validitation and allocation of names
     if (dd <= 0 || dd >= 31){
-    document.getElementById("display").innerText = "Please enter a valid date!"
+    document.getElementById("feedback").innerText = "Please enter a valid date!"
     } else if(mm === "------"){
-    document.getElementById("display").innerText = "Please select a month!"
+    document.getElementById("feedback").innerText = "Please select a month!"
     } else if(yy <= 0 || yy> 2020){
-    document.getElementById("display").innerText = "Please enter a valid year!"
+    document.getElementById("feedback").innerText = "Please enter a valid year!"
     }else if (male === true){
-    document.getElementById("display").innerText = "Born on a " + days[dayOfTheWeek] + "Your Akan name is " + maleNames[dayOfTheWeek] + "!"
+    document.getElementById("display").innerHTML = "Born on a " + days[dayOfTheWeek] + "Your Akan name is " + maleNames[dayOfTheWeek] + "!"
     }else if (female === true){
-      document.getElementById("display").innerText = "You were born on a " + days[dayOfTheWeek] + "Your Akan name is " + femaleNames[dayOfTheWeek] + "!"
+      document.getElementById("display").innerHTML = "You were born on a " + days[dayOfTheWeek] + "Your Akan name is " + femaleNames[dayOfTheWeek] + "!"
     }else{
-      document.getElementById("display").innerText = "Please select Gender "
+      document.getElementById("feedback").innerText = "Please select Gender "
     }
   }
   
