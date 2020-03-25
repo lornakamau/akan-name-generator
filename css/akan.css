@@ -22,21 +22,12 @@ body {
   border-radius: 10px;
 }
 
-.col-md-5 {
-    background-image: url("../child2.jpg");
-    background-position: center;
-    width: 100%; 
-    height: 616px;
-    border-radius: 10px;
-    padding-right: 10px;
-    color: white;
-  }
 .col-md-7 { 
     padding-left: 0;
 } 
 
 h1 {
-    font-size: 40px; 
+    font-size: 34px; 
     font-family: 'Libre Baskerville', serif;
     text-align: center;
     padding-top: 5%;
@@ -47,13 +38,30 @@ p{
 }
 
 .content{
-  padding-right: 12%;
-  padding-left: 12%;
+  padding-right: 10%;
+  padding-left: 10%;
   text-align: center;
+}
+
+form{
+  width: 570px;
+  height: 220px;
+  padding-left: 19%;
+  padding-top: 1%;
+}
+
+.calendar
+{
+  padding-top: 7%;
+}
+
+.form-group{
+  padding-left: 30%;
 }
 
 .form-group .label{
   font-size: 16px;
+  padding-left: 0;
 }
 
 .rdio {
@@ -98,6 +106,19 @@ p{
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
+}
+
+.button{
+  padding-left: 30%;
+}
+.col-md-5 {
+  background-image: url("../child2.jpg");
+  background-position: center;
+  width: 100%; 
+  height: 616px;
+  border-radius: 10px;
+  padding-right: 10px;
+  color: white;
 }
 
 /*
