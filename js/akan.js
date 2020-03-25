@@ -1,4 +1,45 @@
-$(document).ready(function(){
+document.getElementById("submit").addEventListener("click",function(event){
+    event.preventDefault()
+  })
+  
+  //get input from HTML
+  function readData(){
+  var dd = document.getElementById("dd").value;
+  var mm = document.getElementById("mm").value;
+  var yy = document.getElementById("yy").value;
+  
+  
+  if (document.getElementById("male").checked){
+    var male = true;
+  }else{
+    var female = true;
+  }
+  //calculation of day of the week
+  var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  var maleNames = ["Kwasi", "Kwadwo", "Kwabena","Kwaku", "Yaw", "Kofi", "Kwame"];
+  var femaleNames = ["Akosua","Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+  var birthday = new Date(mm + '/' + dd + '/' + yy);
+
+  var dayOfTheWeek = birthday.getDay();
+
+  
+  //Validitation and allocation of names
+    if (dd <= 0 || dd >= 31){
+    document.getElementById("display").innerText = "Please enter a valid date!"
+    } else if(mm === "------"){
+    document.getElementById("display").innerText = "Please select a month!"
+    } else if(yy <= 0 || yy> 2020){
+    document.getElementById("display").innerText = "Please enter a valid year!"
+    }else if (male === true){
+    document.getElementById("display").innerText = "Born on a " + days[dayOfTheWeek] + "Your Akan name is " + maleNames[dayOfTheWeek] + "!"
+    }else if (female === true){
+      document.getElementById("display").innerText = "You were born on a " + days[dayOfTheWeek] + "Your Akan name is " + femaleNames[dayOfTheWeek] + "!"
+    }else{
+      document.getElementById("display").innerText = "Please select Gender "
+    }
+  }
+  
+ /* document).ready(function(){
     $("#myBirthDate").mask("99/99/9999");
 });
 
@@ -41,3 +82,4 @@ function getAkanName(){
 function clearAkanMessage(){
     document.getElementById('message').innerHTML = "";
 }
+*/

@@ -34,6 +34,7 @@
                                         <div class="form-group col-md-4">
                                         <label for="mm"><b>Month</b></label>
                                         <select class="form-control" id="mm">
+                                            <option>------</option>
                                             <option>January</option>
                                             <option>February</option>
                                             <option>March</option>
@@ -50,7 +51,7 @@
                                         </div>
                                         <div class="form-group col-md-3">
                                         <label for="yy"><b>Year</b></label>
-                                        <input type="number" class="form-control" id="yy" placeholder="2020" required>
+                                        <input type="number" class="form-control" id="yy" placeholder="2020" min="1" max="2020" required>
                                         </div>
                                         <div class="form-group col-md-1"></div>
                             </div> 
@@ -67,9 +68,10 @@
                                            </div>
                             </div>
                             <div class ="button">
-                            <button type="submit" onclick="getAkanName(); return false;" class="btn btn-primary btn-xs"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>	
+                            <button type="submit" onclick="readData(); return false;" class="btn btn-primary btn-xs"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>	
                             </div>	
                         </form>	
+                        <p id="display" class="response"> </p>
                     </div>
                     <div class="col-md-5"></div>
                 </div>
