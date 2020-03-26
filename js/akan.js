@@ -36,16 +36,22 @@ document.getElementById("submit").addEventListener("click",function(event){
     document.getElementById("feedback").style.paddingLeft = "38%"
     }else if (male === true){
     document.getElementById("display").innerHTML = "You were born on a " + days[dayOfTheWeek] + ".\n" +  "Your Akan name is " + maleNames[dayOfTheWeek] + "!"
-    document.getElementById("display").style.color = "red"
+    document.getElementById("display").style.color = "MediumBlue"
     document.getElementById("display").style.padding = "9% 22% 13% 22%"
-    document.getElementById("display").style.fontSize = "30px"
+    document.getElementById("display").style.fontSize = "35px"
     document.getElementById("display").style.fontFamily = "'Kalam', cursive"
-    document.getElementById("display").style.position = "Centre"
+    document.getElementById("display").style.textAlign = "center"
 
-   
+
 
     }else if (female === true){
-      document.getElementById("display").innerHTML = "You were born on a " + days[dayOfTheWeek] + "." + "Your Akan name is " + femaleNames[dayOfTheWeek] + "!"
+    document.getElementById("display").innerHTML = "You were born on a " + days[dayOfTheWeek] + ".\n" + "Your Akan name is " + femaleNames[dayOfTheWeek] + "!"
+    document.getElementById("display").style.color = "DeepPink"
+    document.getElementById("display").style.padding = "9% 22% 13% 22%"
+    document.getElementById("display").style.fontSize = "35px"
+    document.getElementById("display").style.fontFamily = "'Kalam', cursive"
+    document.getElementById("display").style.textAlign = "center"
+
     }else {
       document.getElementById("feedback").innerText = "Please select Gender "
       document.getElementById("feedback").style.color = "red"
