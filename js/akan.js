@@ -35,15 +35,12 @@ document.getElementById("submit").addEventListener("click",function(event){
     document.getElementById("feedback").style.color = "red"
     document.getElementById("feedback").style.paddingLeft = "38%"
     }else if (male === true){
-    document.getElementById("display").innerHTML = "You were born on a " + days[dayOfTheWeek] + "." +  "Your Akan name is " + maleNames[dayOfTheWeek] + "!"
+    document.getElementById("display").innerHTML = "You were born on a " + days[dayOfTheWeek] + ".\n" +  "Your Akan name is " + maleNames[dayOfTheWeek] + "!"
     document.getElementById("display").style.color = "red"
-    document.getElementById("display").style.paddingLeft = "22%"
-    document.getElementById("display").style.paddingRight = "22%"
-    document.getElementById("display").style.paddingTop = "11%"
-    document.getElementById("display").style.paddingBottom = "11%"
+    document.getElementById("display").style.padding = "9% 22% 13% 22%"
     document.getElementById("display").style.fontSize = "30px"
-    document.getElementById("display").style.fontFamily = "'Courgette', cursive"
-    document.getElementById("display").style.textAlign = "Centre"
+    document.getElementById("display").style.fontFamily = "'Kalam', cursive"
+    document.getElementById("display").style.position = "Centre"
 
    
 
