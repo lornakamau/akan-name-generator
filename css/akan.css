@@ -124,6 +124,17 @@ form{
   padding-right: 10px;
   color: white;
 }
+.results  {
+  color: #bd5d38;
+  font-size: 50px;
+
+  font-family: 'Saira Extra Condensed',serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: purple;
+  font-size: 18px;
+  text-align: center;
+}
 
 /*
 .rdio input[type="radio"] {
