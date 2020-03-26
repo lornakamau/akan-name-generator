@@ -37,9 +37,10 @@ p{
   font-size: 16px;
 }
 
-h6{
-  padding-left: 32%;
+.response h6{
+  padding-left: 34%;
 }
+
 .content{
   padding-right: 10%;
   padding-left: 10%;

@@ -24,19 +24,27 @@ document.getElementById("submit").addEventListener("click",function(event){
   //Validitation and allocation of names
     if (dd <= 0 || dd >= 31){
     document.getElementById("feedback").innerText = "Please enter a valid date!"
+    document.getElementById("feedback").style.color = "red"
+    document.getElementById("feedback").style.paddingLeft = "36%"
     } else if(mm === "------"){
     document.getElementById("feedback").innerText = "Please select a month!"
+    document.getElementById("feedback").style.color = "red"
+    document.getElementById("feedback").style.paddingLeft = "40%"
     } else if(yy <= 0 || yy> 2020){
     document.getElementById("feedback").innerText = "Please enter a valid year!"
+    document.getElementById("feedback").style.color = "red"
+    document.getElementById("feedback").style.paddingLeft = "38%"
     }else if (male === true){
     document.getElementById("display").innerHTML = "Born on a " + days[dayOfTheWeek] + "Your Akan name is " + maleNames[dayOfTheWeek] + "!"
     }else if (female === true){
       document.getElementById("display").innerHTML = "You were born on a " + days[dayOfTheWeek] + "Your Akan name is " + femaleNames[dayOfTheWeek] + "!"
     }else{
       document.getElementById("feedback").innerText = "Please select Gender "
+      document.getElementById("feedback").style.color = "red"
+      document.getElementById("feedback").style.paddingLeft = "32%"
     }
   }
-  
+
  /* document).ready(function(){
     $("#myBirthDate").mask("99/99/9999");
 });
