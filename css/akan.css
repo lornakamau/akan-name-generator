@@ -1,69 +1,64 @@
-body {
+body { /* make body background color white */
   background-color: white;
 }
 
-.container{
-  padding: 0;
-}
 
 .jumbotron {
   height: 616px;
   background-image: #626f92;
-  box-shadow: 1px 0px 2px #ffffff;
   padding: 0;
   margin-bottom: 0;
   margin-top: 10px;
   margin-left: 10px;
 }
 
-.row{
+.row {
   height: 616px;
   margin: 0;
   border-radius: 10px;
-  }
+}
 
-.col-md-7 { 
-    padding-left: 0;
+.col-md-7  { 
+  padding-left: 0;
 } 
 
 h1 {
-    font-size: 34px; 
-    font-family: 'Libre Baskerville', serif;
-    text-align: center;
-    padding-top: 5%;
+  font-size: 34px; 
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  padding-top: 5%;
 }
 
-p{
+p {
   font-size: 16px;
 }
 
-.response h6{
+.response h6 {
   padding-left: 34%;
 }
 
-.content{
+.content {
   padding-right: 10%;
   padding-left: 10%;
   text-align: center;
 }
 
-form{
+form {
   width: 570px;
   height: 220px;
   padding-left: 19%;
   padding-top: 1%;
 }
 
-.calendar
-{
+.calendar { /* align position of calendar icon to that of the input boxes */
   padding-top: 7%;
 }
 
-.form-group{
+.form-group {
   padding-left: 30%;
 }
 
-.form-group .label{
+.form-group .label {
   font-size: 16px;
   padding-left: 0;
 }
@@ -94,8 +89,8 @@ form{
   background: #fff;
 }
 
-.rdio-default input[type="radio"]:checked + label:before { /* changes button border color to black once it is selected */
-  border-color: black;
+.rdio-default input[type="radio"]:checked + label:before { /* changes button border color to blue once it is selected */
+  border-color: rgb(64, 116, 212);
 }
 
 .rdio input[type="radio"]:checked + label::after  { /* edits button features once it is checked/selected */
@@ -112,10 +107,11 @@ form{
   border-radius: 50px;
 }
 
-.button{
+.button {
   padding-left: 30%;
 }
-.col-md-5 {
+
+.col-md-5  { 
   background-image: url("../child2.jpg");
   background-position: center;
   width: 100%; 
@@ -124,61 +120,3 @@ form{
   padding-right: 10px;
   color: white;
 }
-.results  {
-  color: #bd5d38;
-  font-size: 50px;
-
-  font-family: 'Saira Extra Condensed',serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: purple;
-  font-size: 18px;
-  text-align: center;
-}
-
-/*
-.rdio input[type="radio"] {
-  opacity: -10;
-}
-
-.rdio input[type="radio"]:disabled + label  {
-  color: #999;
-}
-
-.rdio input[type="radio"]:disabled + label:before  {
-  background-color: #eee;
-}
-
-
-.rdio-primary input[type="radio"]:checked + label:before {
-  border-color: #428BCA;
-}
-
-.rdio-primary input[type="radio"]:checked + label::after {
-  background-color: #428BCA;
-}
-
-.rdio-warning input[type="radio"]:checked + label:before {
-  border-color: #F0AD4E;
-}
-
-.rdio-warning input[type="radio"]:checked + label::after {
-  background-color: #F0AD4E;
-}
-
-.rdio-success input[type="radio"]:checked + label:before {
-  border-color: #1CAF9A;
-}
-
-.rdio-success input[type="radio"]:checked + label::after {
-  background-color: #1CAF9A;
-}
-
-.rdio-danger input[type="radio"]:checked + label:before {
-  border-color: #D9534F;
-}
-
-.rdio-danger input[type="radio"]:checked + label::after {
-  background-color: #D9534F;
-}
-*/

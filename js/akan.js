@@ -45,6 +45,7 @@ document.getElementById("submit").addEventListener("click",function(event){
 
 
     }else if (female === true){
+    
     document.getElementById("display").innerHTML = "You were born on a " + days[dayOfTheWeek] + ".\n" + "Your Akan name is " + femaleNames[dayOfTheWeek] + "!"
     document.getElementById("display").style.color = "DeepPink"
     document.getElementById("display").style.padding = "9% 22% 13% 22%"
