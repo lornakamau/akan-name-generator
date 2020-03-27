@@ -2,9 +2,8 @@ body { /* make body background color white */
   background-color: white;
 }
 
-
 .jumbotron {
-  height: 616px;
+  height: 650px;
   background-image: #626f92;
   padding: 0;
   margin-bottom: 0;
@@ -13,12 +12,12 @@ body { /* make body background color white */
 }
 
 .row {
-  height: 616px;
+  height: 650px;
   margin: 0;
   border-radius: 10px;
 }
 
-.col-md-7  { 
+.col-md-7 .col-12 { 
   padding-left: 0;
 } 
 
@@ -111,12 +110,17 @@ form {
   padding-left: 30%;
 }
 
-.col-md-5  { 
-  background-image: url("../child2.jpg");
-  background-position: center;
+.col-md-5 img { 
+  object-fit: cover;
   width: 100%; 
-  height: 616px;
+  height: 650px;
   border-radius: 10px;
-  padding-right: 10px;
   color: white;
+}
+.col-md-5 {
+  padding: 0;
+}
+
+.col-12{
+  padding: 0;
 }
