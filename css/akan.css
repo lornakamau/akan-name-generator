@@ -140,7 +140,7 @@ input[type=number] { /*makes color of input black */
 
 .bottom-left { /* positions copyright over image */
   position: absolute;
-  bottom: 8px;
+  bottom: 2%;
   left: 35%;
   color: white;
 }
