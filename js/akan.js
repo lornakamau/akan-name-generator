@@ -27,12 +27,12 @@ function readData(){
     else if(mm === "------"){ //ensures user selects a month
         document.getElementById("error").innerText = "Please select a month!" //shows error message by replacing the HTML content of id=error
         document.getElementById("error").style.color = "red"
-        document.getElementById("error").style.paddingLeft = "40%"
+        document.getElementById("error").style.paddingLeft = "38%"
       }
     else if(yy <= 0 || yy > 2020) { //ensures user enters a year and the year entered is valid and doesn't exceed 2020
         document.getElementById("error").innerText = "Please enter a valid year!" //shows error message by replacing the HTML content of id=error
         document.getElementById("error").style.color = "red"
-        document.getElementById("error").style.paddingLeft = "38%"
+        document.getElementById("error").style.paddingLeft = "36%"
       }
     else if( (mm === "February") && (dd <= 0 || dd > 29) && (0 == yy % 4) ){ //sets limit for valid date for the month of February in a leap year to 29
         document.getElementById("error").innerText = "Please enter a valid date!" //shows error message by replacing the HTML content of id=error
