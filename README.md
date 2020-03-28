@@ -41,5 +41,9 @@ This project is written in HTML, CSS and JavaScript.
 ## Support and contact details
 Should you be unable to access my web application, have any recommendations or questions, feel free to email me; kamaulorna@gmail.com.
 
+## To-do
+1. Make web app mobile friendly
+2. Make dates valid up until the date the website is being used (i.e reject dates that are in the future)
+
 ## [License](https://github.com/lornakamau/akan-name-generator/blob/master/LICENSE.md)
 MIT (c) 2020 [Lorna Kamau](https://github.com/lornakamau)
