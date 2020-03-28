@@ -116,9 +116,14 @@ form {
   height: 650px;
   border-radius: 10px;
   color: white;
+  padding: 0;
 }
 
-.col-md-5 {
+.container{
+  padding: 0;
+}
+
+.col-md-5{
   padding: 0;
 }
 
@@ -132,4 +137,10 @@ input[type=number]{ /*makes color of input black */
 }
 #mm{ /* makes month options black in color */
   color: black;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 180px;
+  color: white;
 }

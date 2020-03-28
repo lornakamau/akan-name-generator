@@ -60,4 +60,9 @@ function readData(){
         document.getElementById("result").style.fontFamily = "'Kalam', cursive"
         document.getElementById("result").style.textAlign = "center"
       }
+    else if(document.getElementsByName("gender").checked != true) {
+        document.getElementById("error").innerText = "Please select gender!" //shows error message by replacing the HTML content of id=error
+        document.getElementById("error").style.color = "red"
+        document.getElementById("error").style.paddingLeft = "38%"
+    }
   }
