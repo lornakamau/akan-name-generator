@@ -1,146 +1,145 @@
-body { /* make body background color white */
-  background-color: white;
+body {
+  /* make body background color white */
+   background-color: white;
 }
-
-.jumbotron { /* edits jumbotron */
-  background-image: #626f92;
-  padding: 0;
-  margin-bottom: 0;
-  margin-top: 10px;
-  margin-left: 10px;
+.jumbotron {
+  /* edits jumbotron */
+   background-color: #e3eafa;
+   padding: 0;
+   margin-bottom: 0;
+   margin-top: 10px;
+   margin-left: 10px;
 }
-
 .row {
-  margin: 0;
-  border-radius: 10px; /* rounds corners of row */
+   margin: 0;
+   border-radius: 10px;
+  /* rounds corners of row */
 }
-
-.col-md-7 { 
-  padding-left: 0;
-} 
-
+.col-md-7 {
+   padding-left: 0;
+}
 h1 {
-  font-size: 34px; 
-  font-family: 'Libre Baskerville', serif; /* changes font of heading */
-  text-align: center;
-  padding-top: 5%;
+   font-size: 34px;
+   font-family: 'Libre Baskerville', serif;
+  /* changes font of heading */
+   text-align: center;
+   padding-top: 5%;
 }
-
-p { /* makes font of paragraph contents 16px */
-  font-size: 16px;
+p {
+  /* makes font of paragraph contents 16px */
+   font-size: 16px;
 }
-
-.response h6 { /* positions response */
-  padding-left: 34%;
-  margin: 0;
+.response h6 {
+  /* positions response */
+   padding-left: 34%;
+   margin: 0;
 }
-
 .content {
-  padding-right: 10%;
-  padding-left: 10%;
-  text-align: center;
+   padding-right: 10%;
+   padding-left: 10%;
+   text-align: center;
 }
-
-form { /* give the form dimensions */
-  width: 92%;
-  height: 45%;
-  padding-left: 10%;
-  padding-top: 1%;
-  padding-bottom: 5%;
+form {
+  /* give the form dimensions */
+   width: 92%;
+   height: 45%;
+   padding-left: 10%;
+   padding-top: 1%;
+   padding-bottom: 5%;
 }
-
-.calendar { /* align position of calendar icon to that of the input boxes */
-  padding-top: 5%;
+.calendar {
+  /* align position of calendar icon to that of the input boxes */
+   padding-top: 5%;
 }
-
-.form-group { /* positions the form */
-  padding-left: 36%;
+.form-group {
+  /* positions the form */
+   padding-left: 36%;
 }
-
-.form-group .label { /* edits form labels' font */
-  font-size: 16px;
+.form-group .label {
+  /* edits form labels' font */
+   font-size: 16px;
 }
-
-.rdio { /* positions radios */
-  position: relative;
+.rdio {
+  /* positions radios */
+   position: relative;
 }
-
-.rdio label { /* edits radio labels */
-  padding-left: 10px;
-  cursor: pointer;
-  font-size: 15px;
-  margin-bottom: 7px !important;
+.rdio label {
+  /* edits radio labels */
+   padding-left: 10px;
+   cursor: pointer;
+   font-size: 15px;
+   margin-bottom: 7px !important;
 }
-
-.rdio label:before { /* edits the radio buttons before they are selected */
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 2px;
-  left: 0;
-  content: ''; /* makes button contents empty */
-  display: inline-block; 
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px; /* makes button circular */
-  border: 1px solid rgb(126, 124, 124);
-  background: #fff;
+.rdio label:before {
+  /* edits the radio buttons before they are selected */
+   width: 16px;
+   height: 16px;
+   position: absolute;
+   top: 2px;
+   left: 0;
+   content: '';
+  /* makes button contents empty */
+   display: inline-block;
+   -moz-border-radius: 50px;
+   -webkit-border-radius: 50px;
+   border-radius: 50px;
+  /* makes button circular */
+   border: 1px solid rgb(126, 124, 124);
+   background: #fff;
 }
-
-.rdio-default input[type="radio"]:checked + label:before { /* changes button border color to blue once it is selected */
-  border-color: rgb(64, 116, 212);
+.rdio-default input[type="radio"]:checked + label:before {
+  /* changes button border color to blue once it is selected */
+   border-color: rgb(64, 116, 212);
 }
-
-.rdio input[type="radio"]:checked + label::after  { /* edits button features once it is checked/selected */
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 3px;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: rgb(64, 116, 212);
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
+.rdio input[type="radio"]:checked + label::after {
+  /* edits button features once it is checked/selected */
+   content: '';
+   position: absolute;
+   top: 5px;
+   left: 3px;
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   background-color: rgb(64, 116, 212);
+   -moz-border-radius: 50px;
+   -webkit-border-radius: 50px;
+   border-radius: 50px;
 }
-
-.button { /* positions the button */
-  padding-left: 33%;
+.button {
+  /* positions the button */
+   padding-left: 33%;
 }
-
-.col-md-5 img { /* edits features of the image */
-  border-radius: 10px;
-  object-fit: cover;
-  color: white;
-  padding: 0;
-  max-width: 100%;
-  height: 100%;
-} 
-
+.col-md-5 img {
+  /* edits features of the image */
+   border-radius: 10px;
+   object-fit: cover;
+   color: white;
+   padding: 0;
+   max-width: 100%;
+   height: 100%;
+}
 .container{
-  padding: 0;
+   padding: 0;
 }
-
 .col-md-5 {
-  padding: 0;
+   padding: 0;
 }
-
-#error { /* makes error message bold */
-  font-weight: bold;
+#error {
+  /* makes error message bold */
+   font-weight: bold;
 }
-
-input[type=number] { /*makes color of input black */
-  color: black;
+input[type=number] {
+  /*makes color of input black */
+   color: black;
 }
-
-#mm { /* makes month options black in color */
-  color: black;
+#mm {
+  /* makes month options black in color */
+   color: black;
 }
-
-.bottom-left { /* positions copyright over image */
-  position: absolute;
-  bottom: 2%;
-  left: 35%;
-  color: white;
+.bottom-left {
+  /* positions copyright over image */
+   position: absolute;
+   bottom: 2%;
+   left: 35%;
+   color: white;
 }
