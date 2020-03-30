@@ -18,7 +18,7 @@ Once all the required inputs are validated and the user clicks the "Get Akan nam
 
 ![results](images/results.png)
 
-### Development
+## Development
 To make advancements/modifications, follow these steps:
 
 - Fork the repository
