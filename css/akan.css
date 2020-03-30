@@ -32,6 +32,7 @@ p { /* makes font of paragraph contents 16px */
 
 .response h6 { /* positions response */
   padding-left: 34%;
+  margin: 0;
 }
 
 .content {
@@ -43,16 +44,17 @@ p { /* makes font of paragraph contents 16px */
 form { /* give the form dimensions */
   width: 92%;
   height: 45%;
-  padding-left: 19%;
+  padding-left: 10%;
   padding-top: 1%;
+  padding-bottom: 5%;
 }
 
 .calendar { /* align position of calendar icon to that of the input boxes */
-  padding-top: 7%;
+  padding-top: 5%;
 }
 
 .form-group { /* positions the form */
-  padding-left: 30%;
+  padding-left: 36%;
 }
 
 .form-group .label { /* edits form labels' font */
@@ -104,14 +106,16 @@ form { /* give the form dimensions */
 }
 
 .button { /* positions the button */
-  padding-left: 30%;
+  padding-left: 33%;
 }
 
 .col-md-5 img { /* edits features of the image */
-  object-fit: cover;
   border-radius: 10px;
+  object-fit: cover;
   color: white;
   padding: 0;
+  max-width: 100%;
+  height: 100%;
 } 
 
 .container{
